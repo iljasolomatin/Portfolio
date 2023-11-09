@@ -61,3 +61,24 @@ body {
 *, ::before, ::after {
   box-sizing: inherit;
 }
+
+.leftPanel {
+  width: 40px;
+  position: fixed;
+  bottom: 0px;
+  left: 40px;
+  right: auto;
+  z-index: 10;
+  color: var(--light-slate);
+  orientation: left;
+}
+
+@keyframes fade {
+  from {
+      opacity: 0;
+  }
+
+  to {
+      opacity: 1;
+  }
+}

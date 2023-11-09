@@ -1,0 +1,69 @@
+.rightPanel {
+    width: 40px;
+    position: fixed;
+    bottom: 0px;
+    left: auto;
+    right: 40px;
+    z-index: 10;
+    color: var(--light-slate);
+}
+
+.rightPanelLink {
+    display: flex;
+    flex-direction: column;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    opacity: 0;
+}
+
+.rightPanelLink.fade {
+    animation: fade 0.5s ease-out forwards;
+    animation-delay: 2s;
+}
+
+@keyframes fade {
+    from {
+        opacity: 0;
+    }
+
+    to {
+        opacity: 1;
+    }
+}
+
+.rightPanelLink a {
+    margin: 20px auto;
+    padding: 10px;
+    font-family: var(--font-mono);
+    font-size: var(--fz-xxs);
+    line-height: var(--fz-lg);
+    letter-spacing: 0.1em;
+    -webkit-writing-mode: vertical-rl;
+    writing-mode: vertical-rl;
+}
+
+a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    color: inherit;
+    position: relative;
+    transition: transform 0.3s ease;
+}
+
+.rightPanel a:hover {
+    transform: translateY(-5px);
+}
+
+.rightPanel::after {
+    content: "";
+    display: block;
+    width: 1px;
+    height: 90px;
+    margin: 0px auto;
+    background-color: var(--light-slate);
+    animation: fade 0.5s ease-out forwards;
+    animation-delay: 2s;
+    opacity: 0;
+}
