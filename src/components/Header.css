@@ -142,7 +142,26 @@ a {
     animation-delay: 0.5s;
 }
 
-.headerUp {
+.header-up {
     transform: translateY(-100%);
-    transition: transform 0.3s ease-in-out;
+    transition: transform 0.4s ease-in-out;
+}
+
+.fadedown a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--green); /* or any color you want */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0.5;
+}
+
+.fadedown a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }

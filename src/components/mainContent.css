@@ -98,13 +98,6 @@ section {
     max-width: 540px;
 }
 
-.aboutSection {
-    visibility: visible;
-    opacity: 1;
-    transform: matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1);
-    transition: opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s;
-}
-
 .aboutStyle {
     max-width: 900px;
 }
@@ -121,7 +114,6 @@ section {
 }
 
 .aboutStyle h2 {
-    margin: 0px 0px 10px;
     font-weight: 600;
     color: var(--lightest-slate);
     line-height: 4.1;
@@ -148,4 +140,42 @@ section {
     height: 1px;
     margin-left: 20px;
     background-color: var(--lightest-navy);
+}
+
+.aboutStyle .inner {
+    display: grid;
+    grid-template-columns: 3fr 2fr;
+    gap: 50px;
+}
+
+.aboutText p {
+    margin: 0px 0px 15px;
+}
+
+p > a {
+    display: inline-block;
+    text-decoration: none;
+    text-decoration-skip-ink: auto;
+    position: relative;
+    transition: var(--transition);
+    color: var(--green);
+}
+
+p > a::after {
+    content: "";
+    display: block;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: 0;
+    left: 0;
+    background-color: var(--green); /* or any color you want */
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
+    opacity: 0.5;
+}
+
+p > a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
 }
