@@ -6,20 +6,22 @@ function Header() {
     const [lastScrollTop, setLastScrollTop] = useState(0);
 
     useEffect(() => {
-        const handleScroll = () => {
-            let st = window.pageYOffset || document.documentElement.scrollTop;
-            if (st > lastScrollTop) {
-                document.querySelector('.portfolioHeader').classList.add('header-up');
-            } else {
-                document.querySelector('.portfolioHeader').classList.remove('header-up');
-            }
-            setLastScrollTop(st <= 0 ? 0 : st);
-        };
-
-        window.addEventListener('scroll', handleScroll);
-        return () => {
-            window.removeEventListener('scroll', handleScroll);
-        };
+      const handleScroll = () => {
+        let st = window.pageYOffset || document.documentElement.scrollTop;
+        if (st > lastScrollTop){
+          // downscroll
+          document.querySelector('.portfolioHeader').classList.add('header-up');
+        } else {
+          // upscroll
+          document.querySelector('.portfolioHeader').classList.remove('header-up');
+        }
+        setLastScrollTop(st <= 0 ? 0 : st);
+      };
+  
+      window.addEventListener('scroll', handleScroll);
+      return () => {
+        window.removeEventListener('scroll', handleScroll);
+      };
     }, [lastScrollTop]);
 
     return (

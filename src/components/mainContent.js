@@ -31,10 +31,28 @@ function MainContent() {
                     </div>
                 </section>
 
-                <section id="about" class="aboutSection aboutStyle">
+                <section id="about" class="aboutSection aboutStyle" data-sr-id="0" style={{visibility: "visible", opacity: "1", transform: "matrix3d(1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1, 0, 0, 0, 0, 1)", transition: "opacity 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s, transform 0.5s cubic-bezier(0.645, 0.045, 0.355, 1) 0.2s"}}>
                     <h2 class="numberedHeading">
                         About me
                     </h2>
+
+                    <div class="inner">
+                        <div class="aboutText">
+                            <div>
+                                <p>
+                                    My name is Ilja Solomatin and I am a Software Engineer based in London, UK.
+                                </p>
+
+                                <p>
+                                    I have graduated from the University of Bath with a Masters in Computing. I have worked with a variety of technologies, both on the front and back end, and I am always looking to learn more. My goal is to always build applications that provide pixel-perfect, performant experiences.
+                                </p>
+
+                                <p>
+                                    You can read more about me on my <a href="https://www.linkedin.com/in/ilja-solomatin/" target="_blank" rel="noopener noreferrer">LinkedIn</a> profile, or check out my <a href="https://www.github.com/iljasolomatin" target="_blank" rel="noopener noreferrer">GitHub</a>.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
                 </section>
             </main>
         </div>
