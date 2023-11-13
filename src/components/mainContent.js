@@ -30,8 +30,16 @@ function MainContent() {
                         </p>
                     </div>
                 </section>
+
+                <section id="about" class="aboutSection aboutStyle">
+                    <h2 class="numberedHeading">
+                        About me
+                    </h2>
+                </section>
             </main>
         </div>
+
+
     );
 }
 
