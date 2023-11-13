@@ -50,6 +50,12 @@ function MainContent() {
                                 <p>
                                     You can read more about me on my <a href="https://www.linkedin.com/in/ilja-solomatin/" target="_blank" rel="noopener noreferrer">LinkedIn</a> profile, or check out my <a href="https://www.github.com/iljasolomatin" target="_blank" rel="noopener noreferrer">GitHub</a>.
                                 </p>
+
+                                <p>
+                                    Here are some of the technologies I've been working with recently:
+                                </p>
+
+                                
                             </div>
                         </div>
                     </div>
