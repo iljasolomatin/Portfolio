@@ -31,22 +31,22 @@ function Header() {
                 <div class="StyledLinks linksStyle">
                     <ol>
                         <li class="fadedown">
-                            <a href="#">
+                            <a href="#about">
                                 About
                             </a>
                         </li>
                         <li class="fadedown">
-                            <a href="#">
+                            <a href="#experience">
                                 Experience
                             </a>
                         </li>
                         <li class="fadedown">
-                            <a href="#">
+                            <a href="#projects">
                                 Projects
                             </a>
                         </li>
                         <li class="fadedown">
-                            <a href="#">
+                            <a href="#contact">
                                 Contact
                             </a>
                         </li>
