@@ -57,11 +57,23 @@ function MainContent() {
 
                                 
                             </div>
+
                             <ul class="skillsList">
                                 <li>React</li>
                                 <li>Next.js</li>
+                                <li>Node.js</li>
+                                <li>Python</li>
+                                <li>Java</li>
+                                <li>Git</li>
                             </ul>
                         </div>
+                        
+                        <div class="aboutPic">
+                            <div class="wrapper">
+                                
+                            </div>
+                        </div>
+
                     </div>
                 </section>
             </main>
