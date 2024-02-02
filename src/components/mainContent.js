@@ -57,6 +57,10 @@ function MainContent() {
 
                                 
                             </div>
+                            <ul class="skillsList">
+                                <li>React</li>
+                                <li>Next.js</li>
+                            </ul>
                         </div>
                     </div>
                 </section>
